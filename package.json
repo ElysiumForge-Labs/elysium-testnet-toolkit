@@ -1,0 +1,29 @@
+{
+  "name": "elysium-testnet-toolkit",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "Probes, measurements, and example contracts for the Elysium testnet (Kinetiq Orbit L2)",
+  "scripts": {
+    "probe": "bun run src/probe.ts",
+    "blocktime": "bun run src/blocktime.ts",
+    "log": "bun run src/log.ts",
+    "log:summary": "bun run src/logSummary.ts",
+    "arb:feasibility": "bun run src/arbFeasibility.ts",
+    "feed": "bun run src/feed.ts",
+    "endpoints": "bun run src/endpoints.ts",
+    "bridge": "bun run src/bridge.ts",
+    "wallet": "bun run src/wallet.ts",
+    "economics": "bun run src/economics.ts",
+    "universe": "bun run src/universe.ts"
+  },
+  "dependencies": {
+    "viem": "^2.21.0",
+    "ws": "^8.18.0"
+  },
+  "devDependencies": {
+    "@types/ws": "^8.18.1",
+    "bun-types": "^1.1.0",
+    "typescript": "^5.6.0"
+  }
+}
